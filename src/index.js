@@ -34,17 +34,29 @@ let aLongestDynasty = LongestDynasty(ReigningDynasty);
 console.log(LongestDynasty(ReigningDynasty));
 
 document.querySelector('#root').innerHTML = `
-<div class=${styles['pad-50']}>
-   <ul>
-      <h1>A. Answers: </h1>
-      <li>Top Product is :  ${TopProduct(productProfitArray)}<li>
-      <li>Bottom Product is : ${BottomProduct(productProfitArray)}<li>
-      <li>Zero Profit Product is : ${zeroProfitProduct(productProfitArray)}<li>
-   </ul>
+<div class=${styles['d-flex-center']}>
+   <div class=${styles['pad-50']}>
+      <ul>
+         <h1>A. Answers: </h1>
+         <li>Top Product is :  ${TopProduct(productProfitArray)}<li>
+         <li>Bottom Product is : ${BottomProduct(productProfitArray)}<li>
+         <li>Zero Profit Product is : ${zeroProfitProduct(productProfitArray)}<li>
+      </ul>
 
-   <ul>
-      <h1>B. Answer : </h1>
-      <li> Longest Reigning Dynasty is : ${aLongestDynasty} </li>
-   </ul>
+      <ul>
+         <h1>B. Answer : </h1>
+         <li> Longest Reigning Dynasty is : ${aLongestDynasty} </li>
+      </ul>
+
+      <div class=${styles['w-100']}>
+         <div class=${styles.footer}>
+            <span> Name: Waren Gador </span>
+            <p>
+               Class: WD47P <br>
+               Practical Exam : 1
+            </p>
+         </div>
+      </div> 
+   </div>
 </div>
 `
